@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Shade&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,300;1,900&family=Sacramento&family=Satisfy&family=Yatra+One&display=swap" rel="stylesheet">
+	<meta name="robots" content="index,follow">
+	<title>Task Tracker | home</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" href="main/abstract.css">
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="body">
+<nav class="navbar  sticky-top  navbar-light">
+	    <div class="container-fluid flex-column flex-sm-nowrap">
+	        <div class="navbar-brand">Task Tracker</div>
+	    </div>
+	</nav>
+	
+	<main id="mainIndex" class="container-fluid mt-5">
+		<div class="container">
+			<p class="lead">Task Tracker is a simple and easy-to-use todo app that helps
+			you stay organise and productive.
+      Task Tracker empowers you to regain control over your busy life, ensuring
+			that you never miss a deadline or forget an essential task.</p>
+			<div class="container-fluid mb-3">
+			<ul class="rounded mb-2 bg-light lead" style="list-style-type: circle;font-size: 1.2rem;">
+				Features:
+				<li>Simple and user-friendly interface</li>
+				<li>Create and delete tasks.</li>
+				<li>Set priorities and due dates.</li>
+				<li>Organise tasks into categories for seamless filtering.</li>
+				<li>Search for task by category or unique id.</li>
+			</ul>
+			</div>
+			<form class="mt-2 needs-validation" novalidate>
+				<div class="input-group">
+					<div class="input-group-text"><span class="fa fa-user"></span></div>
+					<input type="text" class="round-right form-input" id="username"
+					name="username" placeholder="Username" required>
+					<div class="invalid-feedback" style="font-family:poppins">
+						Please enter a valid username to proceed.<small><ul>
+							<li>name must be at least 4 characters long</li>
+							<li>Name must not contain the space character</li>
+						</ul>
+						</small>
+					</div>
+				</div>
+				<div class="my-5 text-center">
+				<button type="submit" class="btn pop btn-success btn-lg">Get
+				started</button>
+				</div>
+			</form>
+		</div>
+	</main>
+	
+	
+	
+	
+	
+	
+	
+	<script src="index.js"></script>
+</body>
+
+</html>

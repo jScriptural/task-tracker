@@ -1,0 +1,159 @@
+:root {
+         --primary:rgb(13,110,253);
+         --secondary:rgb(108,117,125);
+         --dark: rgb(33,37,41);
+         --info: rgb(13,202,240);
+         --success: rgb(25,135,84);
+         --fade-success: rgb(209,231,221);
+         --light-slate: #8c8ca1;
+         --onyx: #0e0e2c;  
+         --light: #eaeaea;  
+         --whyte: #fff;
+         
+     }
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+ *,*::before,*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	min-height: 100vh;
+	
+}
+.navbar {
+	background: linear-gradient(to bottom, var(--whyte), var(--light));
+}
+.navbar-brand {
+	font-size: 1.4rem;
+	font-family: "Bungee shade";
+	color: var(--success);
+}
+.form-input {
+	border:1px  solid var(--light);
+	border-radius: 5px 0 0 6px;
+	font-size: 1rem;
+	padding: .15rem;
+	font-family: Georgia,"helvetica";
+}
+@media (min-width:350px){
+	.form-input {
+		width: 16rem;
+	}
+}
+.form-input:focus,.form-input:hover,
+form-input:active {
+	outline:none;
+	border: 1px solid #000;
+}
+#username,#taskBody, #taskCategory {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius:6px;
+}
+/*utilities classes*/
+.pop{
+	font-size: 1.5rem;
+	font-family: "Lugrasimo","poppins",Georgia;
+	font-weight: 200;
+	color: var(--light);
+}
+
+.stylish {
+	font-size: .9rem;
+	font-family: "lugrasimo";
+	font-weight: 100;
+}
+.animation-slide-in-right {
+	animation: slide-in-right .5s ease forwards;
+}
+.animation-slide-out-left {
+	animation: slide-out-left .5s ease forwards;
+}
+
+
+/*task form*/
+
+.task-form-con {
+	position: absolute;
+	top:0;
+	overflow: scroll;
+	min-height: 100%;
+	background: transparent;
+	z-index: 10000;
+	background: var(--onyx);
+}
+
+.task-form {
+	position:relative;
+	top: 6vh;
+	bottom: 6vh;
+	background: var(--light);
+}
+/*tasks*/
+[data-task_id]{
+	background: var(--light);
+}
+.delete {
+	font-size: .7rem;
+	color: var(--onyx)
+}
+.task-body {
+	font-family: "poppins";
+	font-size: 1rem;
+	color: var(--success);
+}
+.details {
+	font-family: "Yatra one";
+	font-size: .9rem;
+	color: var(--primary);
+	font-weight: light;
+}
+.details ul {
+	list-style-type: circle;
+}
+
+marquee {
+	font-family: "Bungee shade";
+	color: var(--primary);
+}
+
+.search-result-con {
+	position: absolute;
+	z-index: 20000;
+	min-height: 100%;
+	padding: 12px;
+	top: 0;
+	background: var(--onyx);
+	width:100%;
+	overflow: scroll;
+}
+.fa-times {
+	border: 1px solid #ff0000;
+	text-align: center;
+}
+
+[class*="text-danger"]+hr {
+	background: var(--whyte);
+	color: var(--whyte);
+	height: 2px;
+}
+@keyframes slide-in-right{
+	from {
+		transform: translateX(-100vw);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+@keyframes slide-out-left {
+	from{
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100vw);
+	}
+}

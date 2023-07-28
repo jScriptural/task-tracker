@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Shade&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,400;1,100;1,300;1,900&family=Sacramento&family=Satisfy&family=Yatra+One&display=swap" rel="stylesheet">
+	<meta name="robots" content="index,follow">
+	<title>Task Tracker/home/task</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="abstract.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="body">
+	<nav class="navbar sticky-top  navbar-light">
+		<div class="container-fluid flex-column flex-sm-nowrap">
+			<div class="navbar-brand">Task Tracker</div>
+			<form name="searchForm" class="d-flex flex-nowrap mb-3">
+				<div class="input-group form-input-sm">
+					<input type="text" class="form-input" name="searchItem" id="search" placeholder="search by category or task id">
+					<button id="searchBtn" type="button" class="btn  btn-secondary"><i class="fa fa-search"></i></button>
+				</div>
+				
+			</form>
+		</div>
+	</nav>
+	<marquee></marquee>
+	<div class="container-fluid mt-5 text-center" id="btnCon">
+		<button id="createTaskBtn" class="btn btn-lg pop btn-success">Create task</button>
+	</div>
+			
+	<div class="container-fluid my-5">
+			<div class="container-fluid my-1 p-0">
+				<div class="p-0 container d-flex justify-content-start
+				align-items-center
+				flex-nowrap">
+					<span style="font-size: 1.2rem; color:var(--info);" class="fa fa-info-circle"></span>
+					<div class="stylish lead">Click on task to view task details</div>
+				</div>
+			</div>
+		<div id="taskCon" class="container rounded border"></div>
+	</div>
+	<script src="./main.js"></script>
+</body>
+
+</html>
